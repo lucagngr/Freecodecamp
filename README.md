@@ -1,2 +1,3 @@
 # Freecodecamp
-whats opinion of memes coins 
+responsive design 
+
