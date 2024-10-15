@@ -1,42 +1,59 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Tribute to Bruce Lee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=sports_mma" />
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style>
 </head>
 <body>
-    <h1 id="title">What do you think of meme coins?</h1>
-    <p id="description">This form is presented to you to know what people think about meme coins.</p>
-        <form id="survey-form">
-            <label id="name-label" for="name">Name:</label>
-        <label> <input id="name" type="text" required placeholder="enter your name"></label>
-        <label id="email-label" for="email">Email:</label>
-        <label><input id="email" type="email" required placeholder="Enter your email"></label>
-        <label id="number-label" for="number">Number:</label>
-        <label> <input id="number" type="number" min="0" max="9" placeholder="enter your number"></label>
-        <select id="dropdown">
-            <option value="option1">Do you like meme coins?</option>
-            <option value="option2">You don't like meme coins?</option>
-        </select>
-        <fieldset>
-            <legend>If you like meme coins, tell us which ones you prefer.:</legend>
-        </fieldset>
-       <label> <input type="radio" name="preference" value="preference 1" required> dogecoin </label>
-       <label> <input type="radio" name="preference" value="preference 2" required> shiba inu </label>
-       <label> <input type="radio" name="preference" value="preference 3" required> pepe </label>
-       <label> <input type="radio" name="preference" value="preference 4" required> floki </label>
-       <label>Choose your interests.</label>
-       <label>
-           <input type="checkbox" name="interest" value="interest1"> Do you find financial interest in it?
-       </label>
-       <label>
-           <input type="checkbox" name="interest" value="interest1"> Are you passionate about crypto, especially meme coins?
-       </label>
-       <label for="comments">Additional comments :</label>
-<textarea id="comments" placeholder="Add your comments here"></textarea>
-<input id="submit" type="submit" value="Submit">
-</form>
-  
+    
+   
+    <main id="main">
+         <nav> <ul>
+<li><a href="#about">About<a></li>
+<li><a href="#movies">Movies</a></li>
+<li><a href="#philosophy">Philosophy</a></li>
+                   
+                   </ul>
+</nav>
+<h1 id="title">Bruce Lee</h1>
+<div id="img-div">
+<img id="image" src="https://th.bing.com/th/id/R.1d6368166eb47add912300e767f88fb9?rik=XqFlBORhhawwSQ&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f26600000%2fGame-of-Death-bruce-lee-26683875-1920-1088.jpg&ehk=VCxG9UpHBNTt4ZEx8JINuItiBrQaEmxFU%2bVj71nRhL4%3d&risl=&pid=ImgRaw&r=0" alt="Bruce Lee with nunchaku"/>
+            <figcaption id="img-caption">Bruce Lee in action, showcasing his martial arts prowess.</figcaption></figcaption>
+        </div>
+        <div id="tribute-info">
+           <span class="material-symbols-outlined">
+sports_mma
+</span> <p id="about">Bruce Lee was a martial artist, actor, and filmmaker who is widely regarded as one of the most influential martial artists of all time. He is known for his philosophy, dynamic fighting style, and movies such as "Enter the Dragon" and "The Way of the Dragon."</p>
+        </div>
+        <div>
+            <h2>Famous text by Bruce lee</h2>
+            <p><p id="philosophy">Empty your mind, be formless, shapeless — like water. Now you put water into a cup, it becomes the cup; you put water into a bottle, it becomes the bottle; you put it in a teapot, it becomes the teapot. Now water can flow or it can crash. Be water, my friend."</a></p>
+        </div>
+        <div><h2>Movies of Bruce Lee</h2><ol> <ol id="movies">
+            <li>The big boss</li>
+            <li>Fist of fury</li>
+            <li>The way of dragon</li>
+            <li>Enter the Dragon</li>
+            <li>Game of death</li><ol/>
+
+        </ol>
+        </div>
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Bruce_Lee" target="_blank">Learn more about Bruce Lee</a>
+    </main>
 </body>
 </html>
