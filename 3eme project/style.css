@@ -1,0 +1,22 @@
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #6d6d6d;
+    padding: 20px;
+  }
+  
+  @media (max-width: 600px) {
+   width: 100%;
+      position: relative;
+   
+    #navbar {
+      width: 100%; 
+      position: relative;
+      body {
+    
+    body{
+      font-family: Arial, sans-serif;
+      }
