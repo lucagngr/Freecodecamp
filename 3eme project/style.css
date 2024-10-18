@@ -8,15 +8,14 @@
     padding: 20px;
   }
   
-  @media (max-width: 600px) {
-   width: 100%;
-      position: relative;
-  }
-   
+   @media (max-width: 600px) {
     #navbar {
-      width: 100%; 
-      position: relative;
+        width: 100%; 
+        position: relative;
+      }
     }
+   
+    
     
     body{
       font-family: Arial, sans-serif;
