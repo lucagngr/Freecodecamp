@@ -1,0 +1,75 @@
+:root {
+  --cryptyellow:#f7cf6f;
+  --cryptblack: #1e3135;
+  --cryptgreen: #418a77;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #27293d;
+  background-image: url('grande_image.jpg');
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar li {
+  margin: 20px 0;
+}
+
+#navbar a {
+  color: var(--cryptblack);
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: var(--cryptyellow);
+}
+
+main {
+  margin-left: 200px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+  text-align: justify;
+}
+
+.main-section {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    position: relative;
+  }
+  
+  main {
+    margin-left: 0;
+  }
+}
