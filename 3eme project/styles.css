@@ -1,7 +1,10 @@
 :root {
-  --cryptyellow:#f7cf6f;
+  --cryptyellow: #f7cf6f;
   --cryptblack: #1e3135;
   --cryptgreen: #418a77;
+  --navbar-bg: rgba(39, 41, 61, 0.8);
+  --main-bg: #ffffff;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -17,18 +20,18 @@ body {
   top: 0;
   width: 180px;
   height: 100%;
-  background-color: #27293d;
+  background-color: var(--navbar-bg);
   background-image: url('grande_image.jpg');
   background-size: cover;
   color: white;
   padding: 20px;
   text-align: center;
-  opacity: 0.9;
+  box-shadow: var(--shadow);
 }
 
 #navbar header {
   font-size: 1.5em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
@@ -38,13 +41,13 @@ body {
 }
 
 #navbar li {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 #navbar a {
-  color: var(--cryptblack);
+  color: var(--navbar-text-color);
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.1em;
   transition: color 0.3s ease;
 }
 
@@ -54,22 +57,52 @@ body {
 
 main {
   margin-left: 200px;
-  padding: 20px;
-  background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
-  text-align: justify;
+  padding: 30px;
+  background: var(--main-bg);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
 }
 
 .main-section {
   margin-bottom: 30px;
 }
 
+.main-section header {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
 @media (max-width: 600px) {
   #navbar {
-    width: 100%;
-    position: relative;
+      width: 100%;
+      position: relative;
   }
-  
+
   main {
-    margin-left: 0;
+      margin-left: 0;
   }
+}
+
+#navbar a[href="#ripple"] {
+  color: #000;
+}
+
+#navbar a[href="#solana"] {
+  color: #000;
 }
