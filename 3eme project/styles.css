@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
@@ -105,4 +105,8 @@ ol li {
 
 #navbar a[href="#solana"] {
   color: #000;
+}
+#navbar a:hover[href="#ripple"],#navbar a:hover[href="#solana"]{
+color:var(--cryptyellow);
+
 }
