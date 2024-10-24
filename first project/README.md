@@ -1,3 +1,3 @@
 # Freecodecamp
-responsive design 
+survey form for meme coins
 
