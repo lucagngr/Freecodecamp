@@ -1,0 +1,79 @@
+/* navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+    display:block;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+/* Welcome section fills the viewport */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* Project section styling */
+#projects {
+    padding: 2em;
+    background-color: #fafafa;
+}
+.project-tile {
+    margin-bottom: 1em;
+}
+.project-tile h3 {
+    margin: 0.5em 0;
+}
+.project-tile a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Profile link styling */
+#profile-link {
+    display: block;
+    text-align: center;
+    margin: 2em 0;
+}
+
+/* Media Query*/
+@media (max-width: 600px) {
+    #navbar {
+        padding: 0.5em;
+    }
+    #navbar a {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
