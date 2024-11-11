@@ -1,10 +1,18 @@
-/* navbar */
+/* Global font settings */
+* {
+    font-family: Arial, sans-serif; /* Utilisation d'une police sans-serif basique */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px; /* Taille de police par défaut */
+}
 
+/* Navbar */
 nav {
     position: fixed;
     display: flex;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -24,27 +32,33 @@ nav a {
     transition: all 0.3s ease;
 }
 
-
 nav a:hover {
-    background-color: #3498db; 
-    color: #fff; 
+    background-color: #3498db;
+    color: #fff;
     transform: scale(1.05);
 }
-
 
 nav a:active {
     background-color: #2980b9;
 }
-/*acquaintance*/
-#text-acquaintance{
+
+/* Acquaintance */
+#acquaintance h2{
+margin-top: 20px;
+
+font-size: 50px;
+}
+#text-acquaintance {
     margin-bottom: 1em;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
+
 /* Welcome section fills the viewport */
 #welcome-section {
     position: relative;
@@ -57,11 +71,10 @@ nav a:active {
     color: white;
     font-size: 3rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #3498db, #8e44ad, #e74c3c, #f39c12);
+    background: linear-gradient(90deg, #37698a, #3b44c1, #4a50a5, #575c9f);
     background-size: 400% 400%;
     animation: gradientAnimation 50s ease infinite;
 }
-
 
 @keyframes gradientAnimation {
     0% {
@@ -75,44 +88,78 @@ nav a:active {
     }
 }
 
-/* Taille et apparence du texte */
 #welcome-section h1 {
     font-size: 4rem;
     letter-spacing: 3px;
 }
-/* Project section styling */
+
+/* Project section */
 #projects {
-    
-    padding: 2em;
-    background-color: #fafafa;
-}
-.project-tile {
-    margin-bottom: 1em;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
-.project-tile h3 {
-    margin: 0.5em 0;
-}
-.project-tile a {
-    color: blue;
-    text-decoration: underline;
-}
-
-/* Profile link styling */
-#profile-link {
-    display: block;
     text-align: center;
-    margin: 2em 0;
+    padding-top: 5%;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #37698a, #3b44c1, #4a50a5, #575c9f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 50s ease infinite;
 }
 
-/* services styles */
+#projects h2 {
+    margin-top: 10pxs;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* Carousel */
+.project-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.projects {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-tile {
+    flex: 1 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Services section styles */
 .section-icons {
-    display:flex;
-    justify-content: space-around; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
     align-items: flex-start;
 }
 
@@ -140,34 +187,64 @@ nav a:active {
     margin: 5px 0 0;
     color: #7f8c8d;
 }
-/* Media Query*/
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align : center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-item {
+    margin: 0 15px;
+}
+
+.footer-item a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.footer-item a:hover {
+    color: #3498db;
+}
+
+.footer-signature {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Media Query pour responsive */
+@media (max-width: 600px) {
+    
+}
+
+/* Media Query */
 @media (max-width: 600px) {
     #navbar {
         padding: 0.5em;
     }
+
     #navbar a {
         display: block;
         margin: 0.5em 0;
     }
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        margin-bottom: 10px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
