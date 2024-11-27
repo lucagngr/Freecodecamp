@@ -1,1 +1,1 @@
-project 3 tribute page for bruce lee
+project 3 technical documentation for polar skate co
